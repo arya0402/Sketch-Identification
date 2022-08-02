@@ -34,5 +34,5 @@ function gotResult(error, results) {
     document.getElementById("label").innerHTML = "Label: " + results[0].label;
     document.getElementById("confidence").innerHTML = "Confidence: " + Math.round(results[0].confidence * 100) + "%";
     utterThis = new SpeechSynthesisUtterance(results[0].label);
-    synth.speech(utterThis);
+    synth.speak(utterThis);
 }
